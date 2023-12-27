@@ -22,6 +22,23 @@ i)	#Selection Sort
 ```
 
 
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: CHANDRU.P
+RegisterNumber: 23007250
+'''
+def selection_sort(nums):
+    # write your code here using selection sort
+    for i in range(len(nums)):
+        lowest_value_index=i
+        for j in  range(i+1, len(nums)):
+            if nums[j]<nums[lowest_value_index]:
+                lowest_value_index=j
+        nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
+        
 
 
 
@@ -29,6 +46,22 @@ i)	#Selection Sort
 ii)	#Insertion Sort
 ```
 
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: your name
+RegisterNumber: 
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        item_to_insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]> item_to_insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=item_to_insert
+list_of_nums=eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,6 +70,8 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+![Screenshot 2023-12-27 194926](https://github.com/chandru174642/Sorting-Algorithm/assets/139841798/832d5c3f-831a-45a2-b4b9-9019ea820cc5)
+![Screenshot 2023-12-27 194941](https://github.com/chandru174642/Sorting-Algorithm/assets/139841798/894d49d3-254c-4f07-a220-14c611440369)
 
 
 ## Result:
